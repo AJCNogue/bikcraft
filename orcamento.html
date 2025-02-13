@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Bickcraft - Orçamentos</title>
+  <meta name="description" content="Orcamentos">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,
+  100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,
+  400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <script>document.documentElement.classList.add("js");</script>
+
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="/craft.css" as="style">
+  <link rel="stylesheet" href="/craft.css">
+  <link rel="stylesheet" href="/global/header.css">
+
+</head>
+
+<body id="termos">
+  <header class="header-bg">
+    <div class="header container">
+      <a href="./BK.html">
+        <img src="./svg/bikcraft.svg" alt="Bikcraft">
+      </a>
+
+      <img>
+      <nav aria-label="primaria">
+        <ul class="header-menu font-1-m cor-0">
+          <li><a href="./bicicletas.html">Bicicletas</a></li>
+          <li><a href="./seguros.html">Seguros</a></li>
+          <li><a href="./contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div> 
+  </header>
+
+  <main class="titi">
+    <div class="titulo-bg">
+      <div class="titulo container">
+        <p class="font-2-l-b cor-5">Cotações no seu email</p>
+        <h1 class="font-1-xxl cor-0">solicite um orçamento<span class="cor-p1">.</span></h1>
+      </div>
+    </div>
+
+  <form class="orcamento container" action="./orcamento.html">
+    <div class="orcamento-produto">
+      <h2 class="font-1-xs cor-5">Bickcraft ou Seguros?</h2>
+
+        <input type="radio" name="tipo" value="bikcraft" id="bikcraft">
+        <label for="bikcraft">Bikcraft</label>
+
+        <input type="radio" name="tipo" value="seguro" id="seguro">
+        <label for="seguro">Seguro</label>
+        
+      <div class="orcamento-conteudo" id="orcamento-bikcraft">
+        <h2 class="font-1-xs cor-0">Escolha a sua</h2>
+
+        <input type="radio" name="produto" value="nimbus" id="nimbus">
+        <label for="nimbus">Nimbus<span>R$ 2.499,00</span></label>
+        <div class="orcamento-detalhes">
+          <ul class="font-1-xs cor-8">
+            <li><img src="./svg/eletrica.svg" alt="">Motor Elétrico</li>
+            <li><img src="./svg/icones/carbono.svg" alt="">Fibra de Caborno</li>
+            <li><img src="./svg/icones/velocidade.svg" alt="">50 km</li>
+            <li><img src="./svg/icones/rastreador.svg" alt="">Rastreador</li>
+          </ul>
+          <img src="/imagens/nimbus-home.jpg" alt="Bicicleta preta">
+        </div>
+
+        <input type="radio" name="produto" value="magic" id="magic">
+        <label for="magic">Magic<span>R$ 4.999,00</span></label>       
+          <div class="orcamento-detalhes">
+            <ul class="font-1-xs cor-8">
+              <li><img src="./svg/eletrica.svg" alt="">Motor Elétrico</li>
+              <li><img src="./svg/icones/carbono.svg" alt="">Fibra de Caborno</li>
+              <li><img src="./svg/icones/velocidade.svg" alt="">50 km</li>
+              <li><img src="./svg/icones/rastreador.svg" alt="">Rastreador</li>
+            </ul>
+            <img src="/imagens/magic-home.jpg" alt="Bicicleta preta">
+          </div>
+
+        <input type="radio" name="produto" value="nebula" id="nebula">
+        <label for="nebula">Nebula<span>R$ 3.269,00</span></label>
+        <div class="orcamento-detalhes">
+          <ul class="font-1-xs cor-8">
+            <li><img src="./svg/eletrica.svg" alt="">Motor Elétrico</li>
+            <li><img src="./svg/icones/carbono.svg" alt="">Fibra de Caborno</li>
+            <li><img src="./svg/icones/velocidade.svg" alt="">50 km</li>
+            <li><img src="./svg/icones/rastreador.svg" alt="">Rastreador</li>
+          </ul>
+          <img src="/imagens/nebula-home.jpg" alt="Bicicleta preta">
+        </div>
+
+      </div>
+
+      <div class="orcamento-conteudo" id="orcamento-seguro">
+        <h2 class="font-1-xs cor-0">Escolha o plano</h2>
+
+        <input type="radio" name="produto" value="prata" id="prata">
+        <label for="prata">Prata<span>R$ 199,99</span></label>
+
+        <input type="radio" name="produto" value="ouro" id="ouro">
+        <label for="ouro">Ouro<span>R$ 299,99</span></label>
+      </div>
+    </div>
+  </div>
+
+        <div class="orcamento-dados form">
+          <h2 class="font-1-xs cor-9 col-2">dados pessoais</h2>
+            <div>
+              <label for="nome">Nome</label>
+              <input type="text" id="nome" name="nome">
+            </div>
+            <div>
+              <label for="sobrenome">nome</label>
+              <input type="text" id="sobrenome" name="sobrenome">
+            </div>
+            <div class="col-2">
+              <label for="cpf">CPF</label>
+              <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00">
+            </div>
+            <div class="col-2">
+              <label for="email">Email</label>
+              <input type="text" id="email" name="email">
+            </div>
+            <div>
+              <label for="cep">CEP</label>
+              <input type="text" id="cep" name="cep">
+            </div>
+            <div>
+              <label for="numero">Número</label>
+              <input type="text" id="numero" name="numero">
+            </div>
+            <div>
+              <label for="logradouro">Logradouro</label>
+              <input type="text" id="logradouro" name="logradouro">
+            </div>
+            <div>
+              <label for="bairro">Bairro</label>
+              <input type="text" id="logradouro" name="logradouro">
+            </div>
+            <div>
+              <label for="cidade">Cidade</label>
+              <input type="text" id="cidade" name="cidade">
+            </div>
+            <div>
+              <label for="estado">Estado</label>
+              <input type="text" id="estado" name="estado">
+            </div>
+            <button class="botao col-2">Solicitar Orçamento</button>
+        </div>
+    </form>
+  </main>
+
+  <footer class="footer-bg">
+    <div class="footer container">
+      <img src="/svg/bikcraft.svg" alt="Bikcraft">
+      <div class="footer-contato">
+        <h3 class="font-2-l-b cor-5">Contato</h3>
+        <ul class="font-2-m cor-5">
+          <li><a href="tel:+5541996436564">+5541996436564</a></li>
+          <li><a href="mailto:anogueira07@gmail.com">anogueira07@gmail.com</a></li>
+          <li>Rua Alí Perto 59,Mineirão</li>
+          <li>Montes Claros - Minas Gerais  </li>
+        </ul>
+        <div class="footer-redes">
+          <a href="./">
+            <img src="/svg/contato/instagram 1.svg" alt="instagram">
+          </a>
+          <a href="./">
+            <img src="/svg/contato/facebook 1.svg" alt="facebook">
+          </a>
+          <a href="./">
+            <img src="/svg/contato/youtube-icon 1.svg" alt="youtube">
+          </a>
+        </div>
+      </div>
+      <div class="footer-informacoes">
+        <h3 class="font-2-l-b cor-0">Informações</h3>
+        <nav>
+          <ul class="font-1-m cor-5">
+            <li><a href="/bicicleta.html">Bicicletas</a></li>
+            <li><a href="/segurança.html">Segurança</a></li>
+            <li><a href="/contato.html">Contato</a></li>
+            <li><a href="/termos.html">Termos e Condições</a></li>
+          </ul>
+        </nav>
+      </div>
+      <p class="font-2-m cor-6"><a><img src="/svg/contato/copyright 1.svg">Bikcraft - Alguns Direitos Reservados.</a></p>
+    </div>
+  </footer>
+
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
